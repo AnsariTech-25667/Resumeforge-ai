@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+@layer base {
+  body { @apply bg-slate-50; }
+  button { @apply cursor-pointer; }
+  input:not([type="checkbox"]) {
+    @apply outline-none focus:ring-2 focus:ring-emerald-300 border border-gray-200 focus:border-emerald-400 rounded-lg;
+  }
+  textarea { @apply outline-none focus:ring-2 focus:ring-emerald-300 border border-gray-200 focus:border-emerald-400 rounded-lg resize-none; }
+}
+
+/* small utilities */
+.size-8 { width: 48px; height: 48px }
+.size-11 { width: 44px; height: 44px }
+.size-72 { width: 72px; height: 72px }
+.size-96 { width: 96px; height: 96px }
+
+:root{
+  --brand-1: 217 70 239; /* violet */
+  --brand-2: 16 185 129; /* emerald */
+  --brand-3: 249 115 22; /* orange */
+  --ui-bg: 248 250 252;
+  --glass: rgba(255,255,255,0.7);
+}
+
+/* subtle float animation for decorative elements */
+@keyframes floaty {
+  0% { transform: translateY(0px) }
+  50% { transform: translateY(-6px) }
+  100% { transform: translateY(0px) }
+}
+
+/* bulge / pop animation */
+@keyframes bulge {
+  0% { transform: scale(1) }
+  50% { transform: scale(1.04) }
+  100% { transform: scale(1) }
+}
+
+.floaty { animation: floaty 4s ease-in-out infinite }
+.bulge-hover:hover { animation: bulge 400ms ease-in-out both }
+
+/* enhanced UI tokens */
+:root{
+  --accent-start: 16 185 129; /* green */
+  --accent-end: 124 58 237; /* violet */
+  --card-bg: rgba(255,255,255,0.7);
+}
+
+.btn-accent {
+  background: linear-gradient(90deg, rgba(var(--accent-start),1) 0%, rgba(var(--accent-end),1) 100%);
+  color: white;
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.12);
+}
+.btn-accent:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(16, 185, 129, 0.16); }
+
+.card-glass { background: linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.72)); border-radius: 12px; box-shadow: 0 8px 30px rgba(2,6,23,0.06); }
+
+.focus-ring { box-shadow: 0 0 0 4px rgba(var(--accent-start),0.08); outline: none }
+
+/* helper color tokens for dynamic inline classes (limited) */
+.bg-violet-50 { background-color: rgba(var(--brand-1), 0.06) }
+.text-violet-600 { color: rgb(124 58 237) }
+.stroke-violet-600 { stroke: rgb(124 58 237) }
+.bg-green-50 { background-color: rgba(var(--brand-2), 0.06) }
+.text-green-600 { color: rgb(5 150 105) }
+.stroke-green-600 { stroke: rgb(5 150 105) }
+.bg-orange-50 { background-color: rgba(var(--brand-3), 0.06) }
+.text-orange-600 { color: rgb(249 115 22) }
+.stroke-orange-600 { stroke: rgb(249 115 22) }
+
+/* ChatWidget specifics */
+.arrow-tab svg { display: block }
+
+/* Accessible focus-visible styles */
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(var(--accent-start), 0.18);
+  border-radius: 8px;
+}
+
+/* Respect user's reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+/* screen-reader helper */
+.sr-only { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important; }
+
+/* subtle responsive tweak for very small screens */
+@media (max-width: 420px) {
+  .card-glass { padding: 1rem; }
+  .size-8 { width: 40px; height: 40px }
+}
+
+.btn-accent:focus-visible { box-shadow: 0 0 0 4px rgba(var(--accent-end), 0.2); }
+
+
+
+
+
+
+
+
+
+
