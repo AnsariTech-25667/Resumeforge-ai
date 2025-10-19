@@ -12,9 +12,9 @@ Live demo: (deploy this repository to a static host or a Node host)
 
 Screenshots
 1. Hero / Dashboard
-	![screenshot-1](./docs/screenshots/dashboard.png)
+	![screenshot-1](./docs/screenshots/dashboard.svg)
 2. Template preview
-	![screenshot-2](./docs/screenshots/template-preview.png)
+	![screenshot-2](./docs/screenshots/template-preview.svg)
 
 _I can generate these screenshots and add them to the repo if you like — say the word and I'll produce them._
 

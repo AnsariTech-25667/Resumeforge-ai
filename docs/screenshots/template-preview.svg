@@ -1,0 +1,37 @@
+<svg width="1200" height="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <style>
+      .title{font:700 28px/1.2 Poppins, sans-serif; fill:#0f172a}
+      .sub{font:400 16px/1.4 Poppins, sans-serif; fill:#475569}
+      .card{fill:#ffffff; stroke:#e6eaf0}
+      .accent{fill:url(#g)}
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#f8fafc"/>
+  <g transform="translate(40,40)">
+    <text class="title">Resume Builder — Template Preview</text>
+    <text class="sub" transform="translate(0,36)">Modern Template • Clean, two-column layout</text>
+
+    <g transform="translate(0,80)">
+      <rect class="card" x="0" y="0" width="760" height="520" rx="8" />
+      <text x="28" y="40" class="title" style="font-size:22px;">Maaz Ansari</text>
+      <text x="28" y="70" class="sub">Frontend Engineer — maaz.ansari@example.com</text>
+
+      <rect x="560" y="120" width="160" height="36" rx="6" class="accent" />
+      <text x="596" y="144" class="sub" style="fill:white">Contact</text>
+
+      <rect x="28" y="120" width="480" height="16" rx="4" style="fill:#f1f5f9;stroke:#e6eaf0"/>
+      <rect x="28" y="150" width="480" height="16" rx="4" style="fill:#f1f5f9;stroke:#e6eaf0"/>
+      <rect x="28" y="180" width="480" height="16" rx="4" style="fill:#f1f5f9;stroke:#e6eaf0"/>
+
+    </g>
+  </g>
+
+  <g transform="translate(40,620)">
+    <text class="sub">Designed by Maaz Ansari</text>
+  </g>
+</svg>
