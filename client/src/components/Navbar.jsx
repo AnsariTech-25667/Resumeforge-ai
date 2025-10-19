@@ -18,18 +18,25 @@ const Navbar = () => {
   return (
     <div className='shadow bg-white'>
       <nav className='flex items-center justify-between max-w-7xl mx-auto px-4 py-3.5 text-slate-800 transition-all'>
-        <Link to='/'>
-            <div className="flex items-center gap-3">
-              <img src="/logo.svg" alt="Maaz Ansari logo" className="h-11 w-auto" />
-              <div className="text-sm">
-                <div className="font-semibold">Maaz Ansari</div>
-                <div className="text-xs text-slate-500">Resume Builder</div>
-              </div>
+        <div className='flex items-center gap-6'>
+          <Link to='/' className="flex items-center gap-3">
+            <img src="/logo.svg" alt="Maaz Ansari logo" className="h-11 w-auto" />
+            <div className="text-sm">
+              <div className="font-semibold">Maaz Ansari</div>
+              <div className="text-xs text-slate-500">Resume Builder</div>
             </div>
-        </Link>
+          </Link>
+
+          <div className='hidden md:flex items-center gap-4 text-sm'>
+            <Link to='/' className='text-slate-700 hover:text-slate-900 transition'>Home</Link>
+            <Link to='/app' className='text-slate-700 hover:text-slate-900 transition'>Dashboard</Link>
+            <Link to='/about' className='text-slate-700 hover:text-slate-900 transition'>About</Link>
+          </div>
+        </div>
+
         <div className='flex items-center gap-4 text-sm'>
-            <p className='max-sm:hidden'>Hi, {user?.name}</p>
-            <button onClick={logoutUser} className='bg-white hover:bg-slate-50 border border-gray-300 px-7 py-1.5 rounded-full active:scale-95 transition-all'>Logout</button>
+            <p className='max-sm:hidden'>Hi, {user?.name ?? 'Guest'}</p>
+            <button onClick={logoutUser} className='bg-white hover:bg-slate-50 border border-gray-300 px-4 py-1.5 rounded-full active:scale-95 transition-all'>Logout</button>
         </div>
       </nav>
     </div>

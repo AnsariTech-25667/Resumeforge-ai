@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { dummyResumeData } from '../assets/assets'
+// removed unused dummyResumeData import
 import { ArrowLeftIcon, Briefcase, ChevronLeft, ChevronRight, DownloadIcon, EyeIcon, EyeOffIcon, FileText, FolderIcon, GraduationCap, Share2Icon, Sparkles, User } from 'lucide-react'
 import PersonalInfoForm from '../components/PersonalInfoForm'
 import ResumePreview from '../components/ResumePreview'
@@ -34,7 +34,7 @@ const ResumeBuilder = () => {
     public: false,
   })
 
-  const loadExistingResume = async () => {
+  const loadExistingResume = useCallback(async () => {
    try {
     const {data} = await api.get('/api/resumes/get/' + resumeId, {headers: { Authorization: token }})
     if(data.resume){
@@ -44,7 +44,7 @@ const ResumeBuilder = () => {
    } catch (error) {
     console.log(error.message)
    }
-  }
+  }, [resumeId, token])
 
   const [activeSectionIndex, setActiveSectionIndex] = useState(0)
   const [removeBackground, setRemoveBackground] = useState(false);
@@ -62,7 +62,7 @@ const ResumeBuilder = () => {
 
   useEffect(()=>{
     loadExistingResume()
-  },[])
+  },[loadExistingResume])
 
   const changeResumeVisibility = async () => {
     try {
