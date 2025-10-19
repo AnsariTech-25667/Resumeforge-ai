@@ -2,10 +2,15 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
+// Hero component — landing header and primary CTAs
+// Keep this file focused on presentation and light interactions; heavy logic
+// belongs in the app shell or dedicated hooks for testability.
 const Hero = () => {
 
+    // current user (if logged in) — used to toggle CTAs
     const {user} = useSelector(state => state.auth)
 
+    // mobile menu state
     const [menuOpen, setMenuOpen] = React.useState(false);
 
     const logos = [
@@ -95,10 +100,13 @@ const Hero = () => {
             </div>
 
             {/* Headline + CTA */}
+            {/* Use short headline and gradient emphasis to attract attention —
+                keep the sentence concise for recruiter eyes (they scan quickly). */}
             <h1 className="text-5xl md:text-6xl font-semibold max-w-5xl text-center mt-4 md:leading-[70px]">
                 Land your dream job with <span className=" bg-gradient-to-r from-green-700 to-green-600 bg-clip-text text-transparent text-nowrap">AI-powered </span> resumes.
             </h1>
 
+            {/* Short elevator pitch to reinforce the CTA. */}
             <p className="max-w-md text-center text-base my-7">Create, edit and download professional resumes with AI-powered assistance.</p>
 
             {/* CTA Buttons */}
