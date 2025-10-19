@@ -187,3 +187,5 @@ const MinimalImageTemplate = ({ data, accentColor }) => {
 
 
 export default MinimalImageTemplate;
+
+// Designed by Maaz Ansari

@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 @import "tailwindcss";
 
 *{
-  font-family: "Outfit", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 @layer base {
-  button {
-    @apply cursor-pointer;
+  body { @apply bg-slate-50; }
+  button { @apply cursor-pointer; }
+  input:not([type="checkbox"]) {
+    @apply outline-none focus:ring-2 focus:ring-emerald-300 border border-gray-200 focus:border-emerald-400 rounded-lg;
   }
-  input:not([type="checkbox"]){
-    @apply outline-none focus:ring border border-gray-300 focus:ring-blue-500 focus:border-blue-500 rounded-lg;
-  }
-  textarea {
-    @apply outline-none focus:ring border border-gray-300 focus:ring-blue-500 focus:border-blue-500 rounded-lg resize-none;
-  }
+  textarea { @apply outline-none focus:ring-2 focus:ring-emerald-300 border border-gray-200 focus:border-emerald-400 rounded-lg resize-none; }
 }
+
+/* small utilities */
+.size-8 { width: 48px; height: 48px }
+.size-11 { width: 44px; height: 44px }
+.size-72 { width: 72px; height: 72px }
+.size-96 { width: 96px; height: 96px }
 
 
 

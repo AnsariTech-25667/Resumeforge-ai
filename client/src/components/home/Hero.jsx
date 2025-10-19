@@ -113,10 +113,16 @@ const Hero = () => {
                 </button>
             </div>
 
-            <p className="py-6 text-slate-600 mt-14">Trusting by leading brands, including</p>
+            <p className="py-6 text-slate-600 mt-14">Trusted by professionals worldwide</p>
 
-            <div className="flex flex-wrap justify-between max-sm:justify-center gap-6 max-w-3xl w-full mx-auto py-4" id="logo-container">
-                {logos.map((logo, index) => <img key={index} src={logo} alt="logo" className="h-6 w-auto max-w-xs" />)}
+            <div className="flex items-center gap-4 mt-6">
+              <div className='text-sm text-slate-500'>Designed & built by <span className='font-semibold text-emerald-600'>Maaz Ansari</span></div>
+              <div className='h-0.5 w-8 bg-emerald-200 rounded' />
+              <div className='text-xs text-slate-400'>Beautifully crafted UI • Clean resume templates</div>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-6 max-w-3xl w-full mx-auto py-4" id="logo-container">
+                {logos.map((logo, index) => <img key={index} src={logo} alt={`partner-${index}`} className="h-6 w-auto max-w-xs" />)}
             </div>
         </div>
     </div>

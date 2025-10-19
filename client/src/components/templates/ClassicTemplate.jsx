@@ -6,23 +6,25 @@ const ClassicTemplate = ({ data, accentColor }) => {
         const [year, month] = dateStr.split("-");
         return new Date(year, month - 1).toLocaleDateString("en-US", {
             year: "numeric",
-            month: "short"
+            month: "short",
         });
     };
 
+    const fullName = data.personal_info?.full_name || "Your Name";
+
     return (
-        <div className="max-w-4xl mx-auto p-8 bg-white text-gray-800 leading-relaxed">
+        <div className="max-w-4xl mx-auto p-8 bg-white text-gray-800 leading-relaxed shadow-sm">
             {/* Header */}
             <header className="text-center mb-8 pb-6 border-b-2" style={{ borderColor: accentColor }}>
                 <h1 className="text-3xl font-bold mb-2" style={{ color: accentColor }}>
-                    {data.personal_info?.full_name || "Your Name"}
+                    {fullName}
                 </h1>
 
                 <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
                     {data.personal_info?.email && (
                         <div className="flex items-center gap-1">
                             <Mail className="size-4" />
-                            <span>{data.personal_info.email}</span>
+                            <a href={`mailto:${data.personal_info.email}`} className="hover:underline">{data.personal_info.email}</a>
                         </div>
                     )}
                     {data.personal_info?.phone && (
@@ -40,13 +42,13 @@ const ClassicTemplate = ({ data, accentColor }) => {
                     {data.personal_info?.linkedin && (
                         <div className="flex items-center gap-1">
                             <Linkedin className="size-4" />
-                            <span className="break-all">{data.personal_info.linkedin}</span>
+                            <a target="_blank" rel="noreferrer" href={data.personal_info.linkedin} className="break-all hover:underline">{data.personal_info.linkedin.replace(/^https?:\/\/(www\.)?/, '')}</a>
                         </div>
                     )}
                     {data.personal_info?.website && (
                         <div className="flex items-center gap-1">
                             <Globe className="size-4" />
-                            <span className="break-all">{data.personal_info.website}</span>
+                            <a target="_blank" rel="noreferrer" href={data.personal_info.website} className="break-all hover:underline">{data.personal_info.website.replace(/^https?:\/\/(www\.)?/, '')}</a>
                         </div>
                     )}
                 </div>
@@ -58,7 +60,7 @@ const ClassicTemplate = ({ data, accentColor }) => {
                     <h2 className="text-xl font-semibold mb-3" style={{ color: accentColor }}>
                         PROFESSIONAL SUMMARY
                     </h2>
-                    <p className="text-gray-700 leading-relaxed">{data.professional_summary}</p>
+                    <p className="text-gray-700 leading-relaxed whitespace-pre-line">{data.professional_summary}</p>
                 </section>
             )}
 
@@ -71,7 +73,7 @@ const ClassicTemplate = ({ data, accentColor }) => {
 
                     <div className="space-y-4">
                         {data.experience.map((exp, index) => (
-                            <div key={index} className="border-l-3 pl-4" style={{ borderColor: accentColor }}>
+                            <div key={index} className="pl-4 border-l-2" style={{ borderColor: accentColor }}>
                                 <div className="flex justify-between items-start mb-2">
                                     <div>
                                         <h3 className="font-semibold text-gray-900">{exp.position}</h3>
@@ -101,12 +103,12 @@ const ClassicTemplate = ({ data, accentColor }) => {
 
                     <ul className="space-y-3 ">
                         {data.project.map((proj, index) => (
-                            <div key={index} className="flex justify-between items-start border-l-3 border-gray-300 pl-6">
+                            <li key={index} className="flex justify-between items-start pl-6 border-l-2 border-gray-200">
                                 <div>
-                                    <li className="font-semibold text-gray-800 ">{proj.name}</li>
+                                    <div className="font-semibold text-gray-800 ">{proj.name}</div>
                                     <p className="text-gray-600">{proj.description}</p>
                                 </div>
-                            </div>
+                            </li>
                         ))}
                     </ul>
                 </section>
@@ -154,8 +156,10 @@ const ClassicTemplate = ({ data, accentColor }) => {
                     </div>
                 </section>
             )}
+
+            <footer className="mt-8 text-right text-xs text-gray-500">Designed by Maaz Ansari</footer>
         </div>
     );
-}
+};
 
 export default ClassicTemplate;

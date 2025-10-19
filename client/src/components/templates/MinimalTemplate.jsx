@@ -123,6 +123,7 @@ const MinimalTemplate = ({ data, accentColor }) => {
                     </div>
                 </section>
             )}
+            <footer className="mt-8 text-right text-xs text-gray-500">Designed &amp; maintained by Maaz Ansari</footer>
         </div>
     );
 }
