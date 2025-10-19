@@ -18,6 +18,17 @@ What to evaluate (5-minute checklist)
 4) Accessibility (optional)
    - Check color contrast and keyboard navigation. The project includes automated a11y checks; run them locally if needed.
 
+Interview talking points
+------------------------
+- Design tradeoffs: explain how templates balance ATS parsing with visual emphasis. Be ready to discuss choices around typography, spacing, and print rule selectors.
+- Data model decisions: describe the resume data shape (sections, items, bullets) and how it maps to templates when rendering.
+- AI safety: discuss the deterministic post-processing you use to avoid hallucinated facts (basic sanitization and rephrasing prompts plus user review before export).
+- Performance: how the app keeps client bundles lean (code-splitting, lightweight dependencies) and server responsibilities minimal.
+
+Security & privacy note
+-----------------------
+User-provided resume text is treated as private by default. The demo server stores data only in development mode; in production you'd configure encrypted storage and user consent flows.
+
 Why this matters
 -----------------
 - Recruiters evaluate clarity and scannability in seconds — this project minimizes noise and surfaces role-aligned accomplishments.
