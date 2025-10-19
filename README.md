@@ -16,6 +16,9 @@ Screenshots
 2. Template preview
 	![screenshot-2](./docs/screenshots/template-preview.svg)
 
+Demo animation
+![demo](./docs/screenshots/demo-animation.svg)
+
 _I can generate these screenshots and add them to the repo if you like — say the word and I'll produce them._
 
 ## Key features
