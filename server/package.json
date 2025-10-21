@@ -8,7 +8,7 @@
     "server": "nodemon server.js"
   },
   "keywords": [],
-  "author": "Maaz Ansari <maaz.ansari@example.com>",
+  "author": "Maaz Ansari <maazansari25667@gmail.com>",
   "license": "ISC",
   "description": "",
   "dependencies": {

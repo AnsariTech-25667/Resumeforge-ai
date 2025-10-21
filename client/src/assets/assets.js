@@ -5,47 +5,47 @@ export const dummyResumeData = [
         // ----------------------------------------------------- Resume 1 ------------------------------------------------------
         personal_info: {
             full_name: "Maaz Ansari",
-            email: "maaz.ansari@example.com",
-            phone: "+92 300 0000000",
-            location: "Karachi, Pakistan",
-            linkedin: "https://www.linkedin.com/in/maazansari",
-            website: "https://maazansari.example.com",
-            profession: "Full Stack Developer & Designer",
+            email: "maazansari25667@gmail.com",
+            phone: "+91 95116 70380",
+            location: "Pune, India",
+            linkedin: "https://www.linkedin.com/in/maaz-ansari-06193a231",
+            website: "https://portfolio-rose-ten-h8vdzjp4ol.vercel.app/",
+            profession: "Full-Stack Engineer (MERN/Next.js) • AI/ML & Data Analytics",
             image: dummy_profile
         },
         _id: "68d2a31a1c4dd38875bb037e",
         userId: "68c180acdf1775dfd02c6d87",
     title: "Maaz Ansari — Sample Resume",
         public: true,
-        professional_summary: "Highly analytical Data Analyst with 6 years of experience transforming complex datasets into actionable insights using SQL, Python, and advanced visualization tools. ",
-        skills: ["JavaScript", "React JS", "Full Stack Development", "Git", "GitHub", "NextJS", "Express", "NodeJS", "TypeScript"],
+        professional_summary: "Full-stack engineer with 3 years of experience building production-grade web apps using MERN and Next.js, TypeScript, Prisma, and PostgreSQL or MongoDB. Experienced in clean architecture, AI integrations, data-driven systems, and modern QA methodologies. Adept at designing automated test pipelines and CI/CD for stable, high-quality delivery. Currently open to Full-Stack/Backend roles.",
+        skills: ["React", "Next.js", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "MongoDB", "OpenAI APIs", "Tailwind CSS", "Python", "Framer Motion"],
         experience: [
             {
-                company: "Example Technologies.",
-                position: "Senior Full Stack Developer",
-                start_date: "2023-06",
-                end_date: "Present",
-                description: "Architected, developed, and deployed innovative full-stack applications at Example Technologies.\ncreating robust back-end systems and intuitive front- end interfaces to deliver meaningful digital experiences ",
-                is_current: true,
+                company: "Netraket — All Remote Solutions Pvt. Ltd. (Skuad) — Denmark-based startup",
+                position: "Full-Stack Developer",
+                start_date: "2025-08",
+                end_date: "2025-09",
+                description: "Built and maintained Playwright suites for core user flows, added API tests with Postman and Newman, and wired coverage upload to Codecov with quality gates in GitHub Actions. Set up semantic release with conventional commits and auto changelogs.",
+                is_current: false,
                 _id: "68d2a31a1c4dd38875bb037f"
             },
             {
-                company: "Example Technologies.",
-                position: "Full Stack Developer",
-                start_date: "2019-08",
-                end_date: "2023-05",
-                description: "Engineered and deployed scalable full-stack web applications for Example Technologies, translating complex requirements into robust front-end interfaces and efficient back-end services.",
+                company: "Softmaque Consulting",
+                position: "Software Engineer Intern",
+                start_date: "2025-01",
+                end_date: "2025-06",
+                description: "Built features for an enterprise Defect Tracking and Workflow system using ASP.NET, SQL Server, jQuery, and AJAX used by QA and engineering. Implemented role-based UI, Excel bulk ingestion with server-side validation, and dynamic notifications that improved QA handoffs.",
                 is_current: false,
                 _id: "68d4f7abc8f0d46dc8a8b114"
             }
         ],
         education: [
             {
-                institution: "Example Institute of Technology",
-                degree: "B.TECH",
-                field: "CSE",
-                graduation_date: "2023-05",
-                gpa: "8.7",
+                institution: "Vishwakarma Institute of Technology, Pune",
+                degree: "B.Tech",
+                field: "Electronics & Telecommunications",
+                graduation_date: "2025-05",
+                gpa: "8.0",
                 _id: "68d2a31a1c4dd38875bb0380"
             },
             {
@@ -69,15 +69,15 @@ export const dummyResumeData = [
         accent_color: "#14B8A6",
         project: [
             {
-                name: "Team Task Management System",
-                type: "Web Application (Productivity Tool)",
-                description: "TaskTrackr is a collaborative task management system designed for teams to create, assign, track, and manage tasks in real time. ",
+                name: "PromptPilot — AI Prompt Workspace",
+                type: "Next.js, React, MongoDB, Clerk, OpenAI API",
+                description: "Real-time SSE chat with a prompt library for tags, folders, and versioning and one-click Markdown export. Clerk auth with Mongoose schemas and modular services that allow provider swaps and scale up.",
                 _id: "68d4f882c8f0d46dc8a8b139"
             },
             {
-                name: "EduHub - Online Learning Platform",
-                type: "Web Application (EdTech Platform)",
-                description: "EduHub is an online learning platform where instructors can create courses with video lessons, quizzes, and downloadable resources.",
+                name: "NovaDraft — AI Writing and Image Suite",
+                type: "React with Vite, Express 5, Neon Postgres, Cloudinary, Clerk",
+                description: "AI assisted long-form writing and image generation or edits with Cloudinary CDN and OpenAI integration. Usage analytics and history in Postgres with tier-based limits and a clean API layer.",
                 _id: "68d4f89dc8f0d46dc8a8b147"
             }
         ],

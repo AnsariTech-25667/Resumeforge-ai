@@ -8,17 +8,17 @@ export const dummyResumeData = [
             email: "maazansari25667@gmail.com",
             phone: "+91 95116 70380",
             location: "Pune, India",
-            linkedin: "https://www.linkedin.com/in/maazansari",
-            website: "https://maazansari.example.com",
-            profession: "Full Stack Developer & Designer",
+            linkedin: "https://www.linkedin.com/in/maaz-ansari-06193a231",
+            website: "https://portfolio-rose-ten-h8vdzjp4ol.vercel.app/",
+            profession: "Full-Stack Engineer (MERN/Next.js) • AI/ML & Data Analytics",
             image: dummy_profile
         },
         _id: "68d2a31a1c4dd38875bb037e",
         userId: "68c180acdf1775dfd02c6d87",
     title: "Maaz Ansari — Sample Resume",
         public: true,
-        professional_summary: "Highly analytical Data Analyst with 6 years of experience transforming complex datasets into actionable insights using SQL, Python, and advanced visualization tools. ",
-        skills: ["JavaScript", "React JS", "Full Stack Development", "Git", "GitHub", "NextJS", "Express", "NodeJS", "TypeScript"],
+        professional_summary: "Full-stack engineer with 3 years of experience building production-grade web apps using MERN and Next.js, TypeScript, Prisma, and PostgreSQL or MongoDB. Experienced in clean architecture, AI integrations, data-driven systems, and modern QA methodologies. Adept at designing automated test pipelines and CI/CD for stable, high-quality delivery. Currently open to Full-Stack/Backend roles.",
+        skills: ["React", "Next.js", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "MongoDB", "OpenAI APIs", "Tailwind CSS", "Python", "Framer Motion"],
         experience: [
             {
                 company: "Example Technologies.",

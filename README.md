@@ -1,10 +1,10 @@
-# Resume Builder
+# ResumeForge AI
 
-Resume Builder is a polished, lightweight web app for creating modern, recruiter-friendly resumes quickly. It combines a clean visual editor with AI-assisted enhancements so you can produce tailored resumes in minutes.
+ResumeForge AI is a polished, lightweight web app for creating modern, recruiter-friendly resumes quickly. It combines a clean visual editor with AI-assisted enhancements so you can produce tailored resumes in minutes.
 
-Built & maintained by Maaz Ansari
+Built & maintained by **Maaz Ansari**
 
-Website: https://maazansari.example.com  •  Email: maaz.ansari@example.com
+Portfolio: https://portfolio-rose-ten-h8vdzjp4ol.vercel.app/ • Email: maazansari25667@gmail.com • GitHub: https://github.com/AnsariTech-25667
 
 ## Demo
 
@@ -28,7 +28,7 @@ _I can generate these screenshots and add them to the repo if you like — say t
 - Simple, distraction-free UI focused on recruiter-readability
 
 ## Why I built this
-I built Resume Builder to bridge the gap between design-forward resume templates and recruiter-friendly output. The goal was to produce resumes that are both ATS-friendly and visually clear to human reviewers — prioritizing scannability, semantic HTML for better parsing, and print-ready CSS.
+I built ResumeForge AI to bridge the gap between design-forward resume templates and recruiter-friendly output. Drawing from my experience at Netraket (Denmark-based startup) and Softmaque Consulting, I understood the need for resumes that are both ATS-friendly and visually clear to human reviewers — prioritizing scannability, semantic HTML for better parsing, and print-ready CSS.
 
 ## Implementation highlights
 - React + Vite for fast developer experience and modern bundling
@@ -68,7 +68,21 @@ npm run build
 - Run the build to validate production readiness.
 
 ## About the author
-Maaz Ansari is a frontend engineer focused on building accessible, design-forward web interfaces. Contact: maaz.ansari@example.com — https://maazansari.example.com
+**Maaz Ansari** is a Full-Stack Engineer (MERN/Next.js) with AI & Data Analytics expertise. Graduate of Vishwakarma Institute of Technology, Pune (B.Tech Electronics & Telecommunications, CGPA: 8.0/10). 
+
+**Experience:**
+- Full-Stack Developer at **Netraket** (Denmark-based startup, Skuad) - Aug-Sep 2025 ([Project Details](https://drive.google.com/file/d/16vBr_71T4HOz1xozWmiA2hbrtUAQppgu/view))
+- Software Engineer Intern at **Softmaque Consulting** - Jan-Jun 2025
+
+**Published Research:** AI-Powered Precision Robotic Arm (Computer Vision) - IJISAE (Scopus-indexed), 2024
+
+**Contact:** 
+- 📧 maazansari25667@gmail.com
+- 📱 +91 95116 70380
+- 📍 Pune, India
+- 🌐 [Portfolio](https://portfolio-rose-ten-h8vdzjp4ol.vercel.app/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/maaz-ansari-06193a231)
+- ⚡ [GitHub](https://github.com/AnsariTech-25667)
 
 ## License & notes
 This repository is provided as-is. © 2025 Maaz Ansari

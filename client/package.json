@@ -2,7 +2,7 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
-  "author": "Maaz Ansari <maaz.ansari@example.com>",
+  "author": "Maaz Ansari <maazansari25667@gmail.com>",
   "type": "module",
   "scripts": {
     "dev": "vite",
