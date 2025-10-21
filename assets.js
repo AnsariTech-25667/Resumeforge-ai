@@ -5,9 +5,9 @@ export const dummyResumeData = [
         // ----------------------------------------------------- Resume 1 ------------------------------------------------------
         personal_info: {
             full_name: "Maaz Ansari",
-            email: "maaz.ansari@example.com",
-            phone: "+92 300 0000000",
-            location: "Karachi, Pakistan",
+            email: "maazansari25667@gmail.com",
+            phone: "+91 95116 70380",
+            location: "Pune, India",
             linkedin: "https://www.linkedin.com/in/maazansari",
             website: "https://maazansari.example.com",
             profession: "Full Stack Developer & Designer",
