@@ -27,6 +27,17 @@ _I can generate these screenshots and add them to the repo if you like — say t
 - Export to PDF and printable layouts
 - Simple, distraction-free UI focused on recruiter-readability
 
+## Why I built this
+I built Resume Builder to bridge the gap between design-forward resume templates and recruiter-friendly output. The goal was to produce resumes that are both ATS-friendly and visually clear to human reviewers — prioritizing scannability, semantic HTML for better parsing, and print-ready CSS.
+
+## Implementation highlights
+- React + Vite for fast developer experience and modern bundling
+- Tailwind-style utility classes with a small global stylesheet for visual tokens and print rules
+- Simple Redux store for managing resume drafts and template selection
+- Server-side endpoints (Express) to demonstrate a deployable full-stack flow
+
+If you'd like a one-page demo or a walkthrough video for hiring panels, I can prepare that and include it in the repo.
+
 ## Quick start (developer)
 1. Clone the repo and install dependencies
 
