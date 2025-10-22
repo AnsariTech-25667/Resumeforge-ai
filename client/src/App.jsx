@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard'
 import ResumeBuilder from './pages/ResumeBuilder'
 import Preview from './pages/Preview'
 import Login from './pages/Login'
+import LiveEditor from './pages/LiveEditor'
 import { useDispatch } from 'react-redux'
 import { useCallback } from 'react'
 import api from './configs/api'
@@ -45,6 +46,7 @@ const App = () => {
     <Toaster />
       <Routes>
         <Route path='/' element={<Home />}/>
+        <Route path='/live-editor' element={<LiveEditor />}/>
 
         <Route path='app' element={<Layout />}>
           <Route index element={<Dashboard />}/>

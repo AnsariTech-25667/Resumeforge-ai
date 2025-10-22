@@ -224,6 +224,26 @@ const Hero = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
+                    <Link to='/live-editor' className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white rounded-full px-9 h-12 m-1 ring-offset-2 ring-1 ring-purple-400 flex items-center transition-all shadow-lg hover:shadow-xl">
+                        ⚡ Live Editor
+                        <motion.svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            width="24" height="24" viewBox="0 0 24 24" 
+                            fill="none" stroke="currentColor" strokeWidth="2" 
+                            strokeLinecap="round" strokeLinejoin="round" 
+                            className="lucide lucide-arrow-right ml-1 size-4" 
+                            aria-hidden="true"
+                            animate={{ x: [0, 5, 0] }}
+                            transition={{ duration: 1.5, repeat: Infinity }}
+                        >
+                            <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+                        </motion.svg>
+                    </Link>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                >
                     <Link to='/app' className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white rounded-full px-9 h-12 m-1 ring-offset-2 ring-1 ring-green-400 flex items-center transition-all shadow-lg hover:shadow-xl">
                         Get started
                         <motion.svg 
