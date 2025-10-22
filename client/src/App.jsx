@@ -7,6 +7,7 @@ import ResumeBuilder from './pages/ResumeBuilder'
 import Preview from './pages/Preview'
 import Login from './pages/Login'
 import LiveEditor from './pages/LiveEditor'
+import AIProcessingDashboard from './pages/AIProcessingDashboard'
 import { useDispatch } from 'react-redux'
 import { useCallback } from 'react'
 import api from './configs/api'
@@ -47,6 +48,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/live-editor' element={<LiveEditor />}/>
+        <Route path='/ai-dashboard' element={<AIProcessingDashboard />}/>
 
         <Route path='app' element={<Layout />}>
           <Route index element={<Dashboard />}/>
