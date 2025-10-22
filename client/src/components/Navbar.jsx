@@ -30,7 +30,10 @@ const Navbar = () => {
           <div className='hidden md:flex items-center gap-4 text-sm'>
             <Link to='/' className='text-slate-700 hover:text-slate-900 transition'>Home</Link>
             <Link to='/app' className='text-slate-700 hover:text-slate-900 transition'>Dashboard</Link>
-            <Link to='/about' className='text-slate-700 hover:text-slate-900 transition'>About</Link>
+            <Link to='/live-editor' className='text-slate-700 hover:text-slate-900 transition'>Live Editor</Link>
+            <Link to='/developer-credibility' className='text-slate-700 hover:text-slate-900 transition'>Tech Profile</Link>
+            <Link to='/template-showcase' className='text-slate-700 hover:text-slate-900 transition'>3D Templates</Link>
+            <Link to='/ai-dashboard' className='text-slate-700 hover:text-slate-900 transition'>AI Dashboard</Link>
           </div>
         </div>
 
