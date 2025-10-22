@@ -11,6 +11,7 @@ import { useCallback } from 'react'
 import api from './configs/api'
 import { login, setLoading } from './app/features/authSlice'
 import {Toaster} from 'react-hot-toast'
+import AnimatedBackground from './components/AnimatedBackground'
 
 const App = () => {
 
@@ -40,6 +41,7 @@ const App = () => {
 
   return (
     <>
+    <AnimatedBackground />
     <Toaster />
       <Routes>
         <Route path='/' element={<Home />}/>

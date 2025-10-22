@@ -5,17 +5,25 @@ import Features from '../components/home/Features'
 import Testimonial from '../components/home/Testimonial'
 import CallToAction from '../components/home/CallToAction'
 import Footer from '../components/home/Footer'
+import { motion } from 'framer-motion'
+import { pageVariants, pageTransition } from '../utils/animations'
 
 const Home = () => {
   return (
-    <div>
+    <motion.div
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <Banner />
       <Hero />
       <Features />
       <Testimonial />
       <CallToAction />
       <Footer />
-    </div>
+    </motion.div>
   )
 }
 
