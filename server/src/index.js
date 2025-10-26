@@ -1,19 +1,19 @@
 /*
     Resume Builder — API Server
     Created and maintained by Maaz Ansari
-    Contact: maaz.ansari@example.com
+    Contact: maazansari25667@gmail.com
 */
 
 import express from "express";
 import cors from "cors";
-import "dotenv/config";
+import { config } from "./config.js";
 import connectDB from "./configs/db.js";
 import userRouter from "./routes/userRoutes.js";
 import resumeRouter from "./routes/resumeRoutes.js";
 import aiRouter from "./routes/aiRoutes.js";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = config.PORT;
 
 // Database connection
 await connectDB()

@@ -1,16 +1,18 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "server.js",
+  "description": "ResumeForge AI Backend Server",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "lint": "eslint src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["resume", "ai", "backend", "express"],
   "author": "Maaz Ansari <maazansari25667@gmail.com>",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
   "dependencies": {
     "@imagekit/nodejs": "^7.1.0",
     "bcrypt": "^6.0.0",
